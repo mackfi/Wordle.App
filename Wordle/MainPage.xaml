@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wordle.MainPage"
+             Title="">
+    <StackLayout
+        BackgroundColor="White">
+        
+        <ScrollView
+            x:Name="Home">
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+
+                
+
+            </VerticalStackLayout>
+        </ScrollView>
+        <ScrollView
+            x:Name="Game"
+            IsVisible="False"
+            IsEnabled="False">
+            <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+
+                <Entry
+                     x:Name="guessBox"
+                    >
+                    
+                </Entry>
+                <HorizontalStackLayout
+                    Spacing="25"
+            Padding="30,0"
+                    HorizontalOptions="Center">
+                    <Rectangle
+                        x:Name="Guess1Square1"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+                        
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess1Square2"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess1Square3"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess1Square4"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess1Square5"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="25"
+            Padding="30,0"
+                    HorizontalOptions="Center">
+                    <Rectangle
+                        x:Name="Guess2Square1"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess2Square2"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess2Square3"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess2Square4"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess2Square5"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="25"
+            Padding="30,0"
+                    HorizontalOptions="Center">
+                    <Rectangle
+                        x:Name="Guess3Square1"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess3Square2"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess3Square3"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess3Square4"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess3Square5"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="25"
+            Padding="30,0"
+                    HorizontalOptions="Center">
+                    <Rectangle
+                        x:Name="Guess4Square1"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess4Square2"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess4Square3"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess4Square4"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess4Square5"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout
+                    Spacing="25"
+            Padding="30,0"
+                    HorizontalOptions="Center">
+                    <Rectangle
+                        x:Name="Guess5Square1"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess5Square2"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess5Square3"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess5Square4"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+                    <Rectangle
+                        x:Name="Guess5Square5"
+                        Fill="Beige"
+                        Stroke="gray"
+                        StrokeThickness="2"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        RadiusX="30"
+                        RadiusY="30"
+                        >
+
+                    </Rectangle>
+
+                </HorizontalStackLayout>
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button
+                x:Name="NavButton"
+                Text="Wordle"
+                Clicked="OnStartClicked"
+                HorizontalOptions="Center" />
+        
+    </StackLayout>
+
+    
+
+</ContentPage>
