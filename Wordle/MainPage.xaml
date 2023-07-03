@@ -4,7 +4,9 @@
              x:Class="Wordle.MainPage"
              Title="">
     <StackLayout
-        BackgroundColor="White">
+        BackgroundColor="White"
+        Spacing="25"
+            Padding="30,0">
         
         <ScrollView
             x:Name="Home">
@@ -41,7 +43,7 @@
                     HorizontalOptions="Center">
                     <Rectangle
                         x:Name="Guess1Square1"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -53,7 +55,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess1Square2"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -65,7 +67,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess1Square3"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -77,7 +79,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess1Square4"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -89,7 +91,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess1Square5"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -107,7 +109,7 @@
                     HorizontalOptions="Center">
                     <Rectangle
                         x:Name="Guess2Square1"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -119,7 +121,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess2Square2"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -131,7 +133,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess2Square3"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -143,7 +145,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess2Square4"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -155,7 +157,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess2Square5"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -173,7 +175,7 @@
                     HorizontalOptions="Center">
                     <Rectangle
                         x:Name="Guess3Square1"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -185,7 +187,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess3Square2"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -197,7 +199,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess3Square3"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -209,7 +211,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess3Square4"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -221,7 +223,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess3Square5"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -239,7 +241,7 @@
                     HorizontalOptions="Center">
                     <Rectangle
                         x:Name="Guess4Square1"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -251,7 +253,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess4Square2"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -263,7 +265,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess4Square3"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -275,7 +277,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess4Square4"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -287,7 +289,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess4Square5"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -305,7 +307,7 @@
                     HorizontalOptions="Center">
                     <Rectangle
                         x:Name="Guess5Square1"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -317,7 +319,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess5Square2"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -329,7 +331,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess5Square3"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -341,7 +343,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess5Square4"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -353,7 +355,7 @@
                     </Rectangle>
                     <Rectangle
                         x:Name="Guess5Square5"
-                        Fill="Beige"
+                        Fill="#e5e4e2"
                         Stroke="gray"
                         StrokeThickness="2"
                         WidthRequest="100"
@@ -373,6 +375,8 @@
         <Button
                 x:Name="NavButton"
                 Text="Wordle"
+                TextColor="#56887d"
+                BackgroundColor="#f0fff1"
                 Clicked="OnStartClicked"
                 HorizontalOptions="Center" />
         
