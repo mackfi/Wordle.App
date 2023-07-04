@@ -294,5 +294,68 @@ public partial class MainPage : ContentPage
 
 		guesses++;
     }
+
+    private void WordleReset_Clicked(object sender, EventArgs e)
+    {
+        guesses = 0;
+
+        while (guess1.Count > 0) guess1.RemoveAt(0);
+        while (guess2.Count > 0) guess2.RemoveAt(0);
+        while (guess3.Count > 0) guess3.RemoveAt(0);
+        while (guess4.Count > 0) guess4.RemoveAt(0);
+        while (guess5.Count > 0) guess5.RemoveAt(0);
+        for (int i = 0; i < 5; i++)
+        {
+            guess1.Add( new Rectangle {
+                        Fill = Color.FromArgb("#e5e4e2"),
+                        Stroke = Colors.Gray,
+                        StrokeThickness = 2,
+                        WidthRequest = 100,
+                        HeightRequest = 100,
+                        RadiusX = 30,
+                        RadiusY = 30
+            });
+            guess2.Add(new Rectangle
+            {
+                Fill = Color.FromArgb("#e5e4e2"),
+                Stroke = Colors.Gray,
+                StrokeThickness = 2,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                RadiusX = 30,
+                RadiusY = 30
+            });
+            guess3.Add(new Rectangle
+            {
+                Fill = Color.FromArgb("#e5e4e2"),
+                Stroke = Colors.Gray,
+                StrokeThickness = 2,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                RadiusX = 30,
+                RadiusY = 30
+            });
+            guess4.Add(new Rectangle
+            {
+                Fill = Color.FromArgb("#e5e4e2"),
+                Stroke = Colors.Gray,
+                StrokeThickness = 2,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                RadiusX = 30,
+                RadiusY = 30
+            });
+            guess5.Add(new Rectangle
+            {
+                Fill = Color.FromArgb("#e5e4e2"),
+                Stroke = Colors.Gray,
+                StrokeThickness = 2,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                RadiusX = 30,
+                RadiusY = 30
+            });
+        }
+    }
 }
 

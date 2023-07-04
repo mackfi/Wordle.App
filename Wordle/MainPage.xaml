@@ -353,6 +353,14 @@
 
                 </HorizontalStackLayout>
 
+                <Button
+                x:Name="WordleReset"
+                Text="Reset"
+                TextColor="#56887d"
+                BackgroundColor="#f0fff1"
+                Clicked="WordleReset_Clicked"
+                HorizontalOptions="Center" />
+
 
             </VerticalStackLayout>
         </ScrollView>
