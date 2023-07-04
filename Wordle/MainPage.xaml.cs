@@ -7,6 +7,7 @@ public partial class MainPage : ContentPage
 {
 	private bool isHome;
 	private String wordleWord;
+    private String wordCheck;
 	private int guesses = 0;
 	public MainPage()
 	{
@@ -44,7 +45,9 @@ public partial class MainPage : ContentPage
 			//guessBox.Unfocus();
 			return;
 		}
-		switch (guesses)
+        wordCheck = wordleWord;
+
+        switch (guesses)
 		{ 
 			case 0:
 				while (guess1.Count > 0) guess1.RemoveAt(0);
@@ -52,6 +55,7 @@ public partial class MainPage : ContentPage
 				{
 					if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
 					{
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)),1);
 						guess1.Add(new Rectangle { 
                         Fill= Color.FromArgb("#56887d"),
                         WidthRequest =100,
@@ -60,8 +64,9 @@ public partial class MainPage : ContentPage
                         RadiusY=30,
                         });
 					}
-					else if (wordleWord.Contains(guessBox.Text.ElementAt(i)))
+					else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
 					{
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess1.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
@@ -92,6 +97,7 @@ public partial class MainPage : ContentPage
                 {
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess2.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#56887d"),
@@ -101,8 +107,9 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordleWord.Contains(guessBox.Text.ElementAt(i)))
+                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1); 
                         guess2.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
@@ -131,6 +138,7 @@ public partial class MainPage : ContentPage
                 {
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess3.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#56887d"),
@@ -140,8 +148,9 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordleWord.Contains(guessBox.Text.ElementAt(i)))
+                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess3.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
@@ -170,6 +179,7 @@ public partial class MainPage : ContentPage
                 {
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess4.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#56887d"),
@@ -179,8 +189,9 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordleWord.Contains(guessBox.Text.ElementAt(i)))
+                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess4.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
@@ -209,6 +220,7 @@ public partial class MainPage : ContentPage
                 {
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess5.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#56887d"),
@@ -218,8 +230,9 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordleWord.Contains(guessBox.Text.ElementAt(i)))
+                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess5.Add(new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
