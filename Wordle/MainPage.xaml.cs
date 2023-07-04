@@ -47,27 +47,36 @@ public partial class MainPage : ContentPage
 		}
         wordCheck = wordleWord;
 
+        guessBox.Text = guessBox.Text.ToLower();
+
         switch (guesses)
 		{ 
 			case 0:
 				while (guess1.Count > 0) guess1.RemoveAt(0);
-				for (int i = 0; i < 5; i++)
-				{
-					if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
-					{
-                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)),1);
-						guess1.Add(new Rectangle { 
-                        Fill= Color.FromArgb("#56887d"),
-                        WidthRequest =100,
-                        HeightRequest=100,
-                        RadiusX=30,
-                        RadiusY=30,
-                        });
-					}
-					else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
-					{
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
+                    {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
                         guess1.Add(new Rectangle
+                        {
+                            Fill = Color.FromArgb("#56887d"),
+                            WidthRequest = 100,
+                            HeightRequest = 100,
+                            RadiusX = 30,
+                            RadiusY = 30,
+                        });
+                    }
+                }
+
+                for (int i = 0; i < 5; i++)
+				{
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i)) { continue; }
+					if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
+					{
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
+                        guess1.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
@@ -78,7 +87,7 @@ public partial class MainPage : ContentPage
                     }
 					else
 					{
-                        guess1.Add(new Rectangle
+                        guess1.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
@@ -107,10 +116,15 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i)) { continue; }
+                    if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
-                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1); 
-                        guess2.Add(new Rectangle
+                        wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
+                        guess2.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
@@ -121,7 +135,7 @@ public partial class MainPage : ContentPage
                     }
                     else
                     {
-                        guess2.Add(new Rectangle
+                        guess2.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
@@ -131,6 +145,7 @@ public partial class MainPage : ContentPage
                         });
                     }
                 }
+
                 break;
             case 2:
                 while (guess3.Count > 0) guess3.RemoveAt(0);
@@ -148,10 +163,15 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i)) { continue; }
+                    if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess3.Add(new Rectangle
+                        guess3.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
@@ -162,7 +182,7 @@ public partial class MainPage : ContentPage
                     }
                     else
                     {
-                        guess3.Add(new Rectangle
+                        guess3.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
@@ -172,6 +192,7 @@ public partial class MainPage : ContentPage
                         });
                     }
                 }
+
                 break;
             case 3:
                 while (guess4.Count > 0) guess4.RemoveAt(0);
@@ -189,10 +210,15 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i)) { continue; }
+                    if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess4.Add(new Rectangle
+                        guess4.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
@@ -203,7 +229,7 @@ public partial class MainPage : ContentPage
                     }
                     else
                     {
-                        guess4.Add(new Rectangle
+                        guess4.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
@@ -213,8 +239,9 @@ public partial class MainPage : ContentPage
                         });
                     }
                 }
+
                 break;
-			case 4:
+            case 4:
                 while (guess5.Count > 0) guess5.RemoveAt(0);
                 for (int i = 0; i < 5; i++)
                 {
@@ -230,10 +257,15 @@ public partial class MainPage : ContentPage
                             RadiusY = 30,
                         });
                     }
-                    else if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i)) { continue; }
+                    if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess5.Add(new Rectangle
+                        guess5.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
@@ -244,7 +276,7 @@ public partial class MainPage : ContentPage
                     }
                     else
                     {
-                        guess5.Add(new Rectangle
+                        guess5.Insert(i, new Rectangle
                         {
                             Fill = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
@@ -254,7 +286,8 @@ public partial class MainPage : ContentPage
                         });
                     }
                 }
-                break; 
+
+                break;
         }
 
 
