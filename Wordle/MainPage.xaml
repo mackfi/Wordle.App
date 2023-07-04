@@ -34,10 +34,16 @@
 
                 <Entry
                      x:Name="guessBox"
+                    TextColor="#56887d"
+                    BackgroundColor="#f0fff1"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    Completed="guessBox_Completed"
                     >
                     
                 </Entry>
                 <HorizontalStackLayout
+                    x:Name="guess1"
                     Spacing="25"
             Padding="30,0"
                     HorizontalOptions="Center">
@@ -104,6 +110,7 @@
 
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
+                    x:Name="guess2"
                     Spacing="25"
             Padding="30,0"
                     HorizontalOptions="Center">
@@ -170,6 +177,7 @@
 
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
+                    x:Name="guess3"
                     Spacing="25"
             Padding="30,0"
                     HorizontalOptions="Center">
@@ -236,6 +244,7 @@
 
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
+                    x:Name="guess4"
                     Spacing="25"
             Padding="30,0"
                     HorizontalOptions="Center">
@@ -302,6 +311,7 @@
 
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
+                    x:Name="guess5"
                     Spacing="25"
             Padding="30,0"
                     HorizontalOptions="Center">
