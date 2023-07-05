@@ -56,6 +56,7 @@ public partial class MainPage : ContentPage
             Game.IsVisible = true;
 			isHome = false;
 			NavButton.Text = "Home";
+            ResetWordleBoard();
         }
 		else
 		{
@@ -328,24 +329,34 @@ public partial class MainPage : ContentPage
 
     private void WordleReset_Clicked(object sender, EventArgs e)
     {
+        ResetWordleBoard();
+    }
+    
+    void ResetWordleBoard()
+    {
         guesses = 0;
         wordleWord = wordleData.ElementAt(rand.Next(0, wordleData.Count() - 1));
+        Cheatcode.Text = wordleWord;
+        guessBox.Text = "";
 
         while (guess1.Count > 0) guess1.RemoveAt(0);
         while (guess2.Count > 0) guess2.RemoveAt(0);
         while (guess3.Count > 0) guess3.RemoveAt(0);
         while (guess4.Count > 0) guess4.RemoveAt(0);
         while (guess5.Count > 0) guess5.RemoveAt(0);
+
         for (int i = 0; i < 5; i++)
         {
-            guess1.Add( new Rectangle {
-                        Fill = Color.FromArgb("#e5e4e2"),
-                        Stroke = Colors.Gray,
-                        StrokeThickness = 2,
-                        WidthRequest = 100,
-                        HeightRequest = 100,
-                        RadiusX = 30,
-                        RadiusY = 30
+            
+            guess1.Add(new Rectangle
+            {
+                Fill = Color.FromArgb("#e5e4e2"),
+                Stroke = Colors.Gray,
+                StrokeThickness = 2,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                RadiusX = 30,
+                RadiusY = 30
             });
             guess2.Add(new Rectangle
             {

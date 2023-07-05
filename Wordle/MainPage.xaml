@@ -38,319 +38,37 @@
                     BackgroundColor="#f0fff1"
                     HorizontalOptions="Center"
                     WidthRequest="200"
-                    Completed="guessBox_Completed"
-                    >
-                    
+                    Completed="guessBox_Completed">
                 </Entry>
                 <HorizontalStackLayout
                     x:Name="guess1"
                     Spacing="25"
-            Padding="30,0"
+                    Padding="30,0"
                     HorizontalOptions="Center">
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-                        
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
                     x:Name="guess2"
                     Spacing="25"
-            Padding="30,0"
+                    Padding="30,0"
                     HorizontalOptions="Center">
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
                     x:Name="guess3"
                     Spacing="25"
-            Padding="30,0"
+                    Padding="30,0"
                     HorizontalOptions="Center">
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
                     x:Name="guess4"
                     Spacing="25"
-            Padding="30,0"
+                    Padding="30,0"
                     HorizontalOptions="Center">
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-
                 </HorizontalStackLayout>
                 <HorizontalStackLayout
                     x:Name="guess5"
                     Spacing="25"
-            Padding="30,0"
+                    Padding="30,0"
                     HorizontalOptions="Center">
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-                    <Rectangle
-                        Fill="#e5e4e2"
-                        Stroke="gray"
-                        StrokeThickness="2"
-                        WidthRequest="100"
-                        HeightRequest="100"
-                        RadiusX="30"
-                        RadiusY="30"
-                        >
-
-                    </Rectangle>
-
                 </HorizontalStackLayout>
 
                 <Button
@@ -361,6 +79,12 @@
                 Clicked="WordleReset_Clicked"
                 HorizontalOptions="Center" />
 
+                <Label
+                    Text=""
+                    x:Name="Cheatcode"
+                    TextColor="Black">
+                    
+                </Label>
 
             </VerticalStackLayout>
         </ScrollView>
