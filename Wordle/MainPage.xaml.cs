@@ -1,5 +1,7 @@
 ﻿using Microsoft.Maui.Controls.Shapes;
 using Microsoft.Maui.Graphics;
+using System;
+using System.Text;
 
 namespace Wordle;
 
@@ -7,12 +9,42 @@ public partial class MainPage : ContentPage
 {
 	private bool isHome;
 	private String wordleWord;
+    private List<String> wordleData = new List<String>();
+    Random rand = new Random();
     private String wordCheck;
 	private int guesses = 0;
 	public MainPage()
 	{
 		InitializeComponent();
-	}
+
+        string filePath =
+        @"C:\Users\mackf\Downloads\archive (1)\5_letters.csv";
+        StreamReader reader = null;
+        if (File.Exists(filePath))
+        {
+            reader = new StreamReader(File.OpenRead(filePath));
+            List<string> listA = new List<string>();
+            StringBuilder sb = new StringBuilder();
+            while (!reader.EndOfStream)
+            {
+                var line = reader.ReadLine();
+                var values = line.Split(',');
+                foreach (var item in values)
+                {
+                    sb.Append(item);
+                }
+                wordleData.Add(sb.ToString());
+                sb = new StringBuilder();
+            }
+        }
+        else
+        {
+            Console.WriteLine("File doesn't exist");
+        }
+        //Console.ReadLine();
+        reader.Close();
+        wordleWord = wordleData.ElementAt(rand.Next(0, wordleData.Count() - 1));
+    }
 
 	private void OnStartClicked(object sender, EventArgs e)
 	{
@@ -24,7 +56,6 @@ public partial class MainPage : ContentPage
             Game.IsVisible = true;
 			isHome = false;
 			NavButton.Text = "Home";
-			wordleWord = "hello";
         }
 		else
 		{
@@ -298,6 +329,7 @@ public partial class MainPage : ContentPage
     private void WordleReset_Clicked(object sender, EventArgs e)
     {
         guesses = 0;
+        wordleWord = wordleData.ElementAt(rand.Next(0, wordleData.Count() - 1));
 
         while (guess1.Count > 0) guess1.RemoveAt(0);
         while (guess2.Count > 0) guess2.RemoveAt(0);
