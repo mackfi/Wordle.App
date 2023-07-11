@@ -22,7 +22,7 @@
             </VerticalStackLayout>
         </ScrollView>
         <ScrollView
-            x:Name="Game"
+            x:Name="WordleGame"
             IsVisible="False"
             IsEnabled="False">
             <VerticalStackLayout
@@ -96,7 +96,15 @@
                 BackgroundColor="#f0fff1"
                 Clicked="OnStartClicked"
                 HorizontalOptions="Center" />
-        
+
+        <Button
+                x:Name="twoZeroFourEightNav"
+                Text="2048"
+                TextColor="#b660cd"
+                BackgroundColor="#fae9ff"
+                Clicked="OnStartClicked"
+                HorizontalOptions="Center" />
+
     </StackLayout>
 
     

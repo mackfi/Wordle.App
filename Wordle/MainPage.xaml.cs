@@ -51,8 +51,8 @@ public partial class MainPage : ContentPage
 		{
             Home.IsEnabled = false;
             Home.IsVisible = false;
-            Game.IsEnabled = true;
-            Game.IsVisible = true;
+            WordleGame.IsEnabled = true;
+            WordleGame.IsVisible = true;
 			isHome = false;
 			WordleNav.Text = "Home";
             ResetWordleBoard();
@@ -61,8 +61,8 @@ public partial class MainPage : ContentPage
 		{
 			Home.IsEnabled = true;
 			Home.IsVisible = true;
-            Game.IsEnabled = false;
-            Game.IsVisible = false;
+            WordleGame.IsEnabled = false;
+            WordleGame.IsVisible = false;
 			isHome = true;
 			WordleNav.Text = "Wordle";
         }
