@@ -90,7 +90,7 @@
         </ScrollView>
 
         <Button
-                x:Name="NavButton"
+                x:Name="WordleNav"
                 Text="Wordle"
                 TextColor="#56887d"
                 BackgroundColor="#f0fff1"

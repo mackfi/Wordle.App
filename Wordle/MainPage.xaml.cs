@@ -41,7 +41,6 @@ public partial class MainPage : ContentPage
         {
             Console.WriteLine("File doesn't exist");
         }
-        //Console.ReadLine();
         reader.Close();
         wordleWord = wordleData.ElementAt(rand.Next(0, wordleData.Count() - 1));
     }
@@ -55,7 +54,7 @@ public partial class MainPage : ContentPage
             Game.IsEnabled = true;
             Game.IsVisible = true;
 			isHome = false;
-			NavButton.Text = "Home";
+			WordleNav.Text = "Home";
             ResetWordleBoard();
         }
 		else
@@ -65,16 +64,22 @@ public partial class MainPage : ContentPage
             Game.IsEnabled = false;
             Game.IsVisible = false;
 			isHome = true;
-			NavButton.Text = "Wordle";
+			WordleNav.Text = "Wordle";
         }
 		
 	}
 
+    /// <summary>
+    /// Called whenever the user enters text into the guessBox entry.
+    /// Handles most of the logic behind the Wordle game, including
+    /// parsing the guess and determining which letters were correct.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void guessBox_Completed(object sender, EventArgs e)
     {
 		if (guessBox.Text.Length != 5) 
 		{
-			//guessBox.Unfocus();
 			return;
 		}
         wordCheck = wordleWord;
@@ -331,7 +336,9 @@ public partial class MainPage : ContentPage
     {
         ResetWordleBoard();
     }
-    
+    /// <summary>
+    /// Selects a new Wordle word, and resets the board and amount of guesses.
+    /// </summary>
     void ResetWordleBoard()
     {
         guesses = 0;
