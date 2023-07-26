@@ -24,12 +24,66 @@
         <ScrollView
             x:Name="WordleGame"
             IsVisible="False"
-            IsEnabled="False">
+            IsEnabled="False"
+            VerticalOptions="FillAndExpand">
             <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+                >
 
+                <HorizontalStackLayout>
+                    <Rectangle
+                    BackgroundColor="#56887d"
+                    WidthRequest="20"
+                    HeightRequest="20"
+                    RadiusX="4"
+                    RadiusY="4"
+                    >
+
+                    </Rectangle>
+                    <Label
+                        Text="Correct"
+                        TextColor="Black">
+                        
+                    </Label>
+
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Rectangle
+                    BackgroundColor="#b1cdc2"
+                    WidthRequest="20"
+                    HeightRequest="20"
+                    RadiusX="4"
+                    RadiusY="4"
+                    >
+
+                    </Rectangle>
+                    <Label
+                        Text="Exists"
+                        TextColor="Black">
+
+                    </Label>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Rectangle
+                    BackgroundColor="#e5e4e2"
+                    WidthRequest="20"
+                    HeightRequest="20"
+                    RadiusX="4"
+                    RadiusY="4"
+                    >
+
+                    </Rectangle>
+                    <Label
+                        Text="Incorrect"
+                        TextColor="Black">
+
+                    </Label>
+
+                </HorizontalStackLayout>
 
 
                 <Entry
