@@ -15,9 +15,15 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+                <Button
+                x:Name="WordleNav"
+                Text="Wordle"
+                TextColor="#56887d"
+                BackgroundColor="#f0fff1"
+                Clicked="OnStartClicked"
+                HorizontalOptions="Center" />
 
 
-                
 
             </VerticalStackLayout>
         </ScrollView>
@@ -133,6 +139,14 @@
                 Clicked="WordleReset_Clicked"
                 HorizontalOptions="Center" />
 
+                <Button
+                x:Name="HomeNav"
+                Text="Home"
+                TextColor="#56887d"
+                BackgroundColor="#f0fff1"
+                Clicked="HomeNav_Clicked"
+                HorizontalOptions="Center" />
+
                 <Label
                     Text=""
                     x:Name="Cheatcode"
@@ -143,21 +157,15 @@
             </VerticalStackLayout>
         </ScrollView>
 
-        <Button
-                x:Name="WordleNav"
-                Text="Wordle"
-                TextColor="#56887d"
-                BackgroundColor="#f0fff1"
-                Clicked="OnStartClicked"
-                HorizontalOptions="Center" />
+        
 
-        <Button
+        <!--<Button
                 x:Name="twoZeroFourEightNav"
                 Text="2048"
                 TextColor="#b660cd"
                 BackgroundColor="#fae9ff"
                 Clicked="OnStartClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
 
     </StackLayout>
 

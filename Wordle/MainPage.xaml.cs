@@ -7,7 +7,6 @@ namespace Wordle;
 
 public partial class MainPage : ContentPage
 {
-	private bool isHome;
 	private String wordleWord;
     private List<String> wordleData = new List<String>();
     Random rand = new Random();
@@ -47,26 +46,14 @@ public partial class MainPage : ContentPage
 
 	private void OnStartClicked(object sender, EventArgs e)
 	{
-		if (isHome)
-		{
+		
             Home.IsEnabled = false;
             Home.IsVisible = false;
             WordleGame.IsEnabled = true;
             WordleGame.IsVisible = true;
-			isHome = false;
-			WordleNav.Text = "Home";
+			
             ResetWordleBoard();
-        }
-		else
-		{
-			Home.IsEnabled = true;
-			Home.IsVisible = true;
-            WordleGame.IsEnabled = false;
-            WordleGame.IsVisible = false;
-			isHome = true;
-			WordleNav.Text = "Wordle";
-        }
-		
+        
 	}
 
     /// <summary>
@@ -631,6 +618,14 @@ public partial class MainPage : ContentPage
                 RadiusY = 30
             });
         }
+    }
+
+    private void HomeNav_Clicked(object sender, EventArgs e)
+    {
+        Home.IsEnabled = true;
+        Home.IsVisible = true;
+        WordleGame.IsEnabled = false;
+        WordleGame.IsVisible = false;
     }
 }
 
