@@ -96,13 +96,28 @@ public partial class MainPage : ContentPage
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess1.Add(new Rectangle
+                        guess1.Add(new Border
                         {
-                            Fill = Color.FromArgb("#56887d"),
+                            Stroke = Color.FromArgb("#56887d"),
+                            BackgroundColor = Color.FromArgb("#56887d"),
+                            StrokeThickness = 1,
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#56887d"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -113,24 +128,54 @@ public partial class MainPage : ContentPage
 					if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
 					{
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess1.Insert(i, new Rectangle
+                        guess1.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#b1cdc2"),
+                            Stroke = Color.FromArgb("#b1cdc2"),
+                            StrokeThickness= 1,
+                            BackgroundColor = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill= Color.FromArgb("#b1cdc2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
 					else
 					{
-                        guess1.Insert(i, new Rectangle
+                        guess1.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#e5e4e2"),
+                            Stroke = Color.FromArgb("#e5e4e2"),
+                            StrokeThickness= 1,
+                            BackgroundColor = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#e5e4e2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
 				}
@@ -144,13 +189,28 @@ public partial class MainPage : ContentPage
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess2.Add(new Rectangle
+                        guess2.Add(new Border
                         {
-                            Fill = Color.FromArgb("#56887d"),
+                            Stroke = Color.FromArgb("#56887d"),
+                            BackgroundColor = Color.FromArgb("#56887d"),
+                            StrokeThickness = 1,
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#56887d"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -161,24 +221,54 @@ public partial class MainPage : ContentPage
                     if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess2.Insert(i, new Rectangle
+                        guess2.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#b1cdc2"),
+                            Stroke = Color.FromArgb("#b1cdc2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#b1cdc2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                     else
                     {
-                        guess2.Insert(i, new Rectangle
+                        guess2.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#e5e4e2"),
+                            Stroke = Color.FromArgb("#e5e4e2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#e5e4e2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -191,13 +281,28 @@ public partial class MainPage : ContentPage
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess3.Add(new Rectangle
+                        guess3.Add(new Border
                         {
-                            Fill = Color.FromArgb("#56887d"),
+                            Stroke = Color.FromArgb("#56887d"),
+                            BackgroundColor = Color.FromArgb("#56887d"),
+                            StrokeThickness = 1,
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#56887d"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -208,24 +313,54 @@ public partial class MainPage : ContentPage
                     if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess3.Insert(i, new Rectangle
+                        guess3.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#b1cdc2"),
+                            Stroke = Color.FromArgb("#b1cdc2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#b1cdc2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                     else
                     {
-                        guess3.Insert(i, new Rectangle
+                        guess3.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#e5e4e2"),
+                            Stroke = Color.FromArgb("#e5e4e2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#e5e4e2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -238,13 +373,28 @@ public partial class MainPage : ContentPage
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess4.Add(new Rectangle
+                        guess4.Add(new Border
                         {
-                            Fill = Color.FromArgb("#56887d"),
+                            Stroke = Color.FromArgb("#56887d"),
+                            BackgroundColor = Color.FromArgb("#56887d"),
+                            StrokeThickness = 1,
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#56887d"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -255,24 +405,54 @@ public partial class MainPage : ContentPage
                     if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess4.Insert(i, new Rectangle
+                        guess4.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#b1cdc2"),
+                            Stroke = Color.FromArgb("#b1cdc2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#b1cdc2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                     else
                     {
-                        guess4.Insert(i, new Rectangle
+                        guess4.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#e5e4e2"),
+                            Stroke = Color.FromArgb("#e5e4e2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#e5e4e2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -285,13 +465,28 @@ public partial class MainPage : ContentPage
                     if (guessBox.Text.ElementAt(i) == wordleWord.ElementAt(i))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess5.Add(new Rectangle
+                        guess5.Add(new Border
                         {
-                            Fill = Color.FromArgb("#56887d"),
+                            Stroke = Color.FromArgb("#56887d"),
+                            BackgroundColor = Color.FromArgb("#56887d"),
+                            StrokeThickness = 1,
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#56887d"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -302,24 +497,54 @@ public partial class MainPage : ContentPage
                     if (wordCheck.Contains(guessBox.Text.ElementAt(i)))
                     {
                         wordCheck = wordCheck.Remove(wordCheck.IndexOf(guessBox.Text.ElementAt(i)), 1);
-                        guess5.Insert(i, new Rectangle
+                        guess5.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#b1cdc2"),
+                            Stroke = Color.FromArgb("#b1cdc2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#b1cdc2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#b1cdc2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                     else
                     {
-                        guess5.Insert(i, new Rectangle
+                        guess5.Insert(i, new Border
                         {
-                            Fill = Color.FromArgb("#e5e4e2"),
+                            Stroke = Color.FromArgb("#e5e4e2"),
+                            StrokeThickness = 1,
+                            BackgroundColor = Color.FromArgb("#e5e4e2"),
                             WidthRequest = 100,
                             HeightRequest = 100,
-                            RadiusX = 30,
-                            RadiusY = 30,
+                            StrokeShape = new Rectangle
+                            {
+                                Fill = Color.FromArgb("#e5e4e2"),
+                                RadiusX = 30,
+                                RadiusY = 30
+                            },
+                            Content = new Label
+                            {
+                                HorizontalOptions = LayoutOptions.Center,
+                                VerticalOptions = LayoutOptions.Center,
+                                Text = guessBox.Text.ToUpper().ElementAt(i).ToString(),
+                                TextColor = Colors.White,
+                                FontSize = 48,
+                                FontAttributes = FontAttributes.Bold
+                            }
                         });
                     }
                 }
@@ -328,7 +553,7 @@ public partial class MainPage : ContentPage
         }
 
 
-
+        guessBox.Text = "";
 		guesses++;
     }
 
