@@ -1,6 +1,7 @@
 ﻿using Microsoft.Maui.Controls.Shapes;
 using Microsoft.Maui.Graphics;
 using System;
+using System.Reflection.PortableExecutable;
 using System.Text;
 
 namespace Wordle;
@@ -15,13 +16,20 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+        SetupWordle();
+        
+    }
 
+    private void SetupWordle()
+    {
         string filePath =
-        @"C:\Users\mackf\Downloads\archive (1)\5_letters.csv";
-        StreamReader reader = null;
-        if (File.Exists(filePath))
+        @$"C://Users/mackf/source/repos/mackfi/Wordle.App/Wordle/5_letters.csv";
+        
+        try
         {
-            reader = new StreamReader(File.OpenRead(filePath));
+            
+            //using var stream = await FileSystem.OpenAppPackageFileAsync("5_letters.csv");
+            using var reader = new StreamReader(filePath);
             List<string> listA = new List<string>();
             StringBuilder sb = new StringBuilder();
             while (!reader.EndOfStream)
@@ -35,12 +43,13 @@ public partial class MainPage : ContentPage
                 wordleData.Add(sb.ToString());
                 sb = new StringBuilder();
             }
+            reader.Close();
         }
-        else
+        catch
         {
             Console.WriteLine("File doesn't exist");
         }
-        reader.Close();
+        
         wordleWord = wordleData.ElementAt(rand.Next(0, wordleData.Count() - 1));
     }
 
